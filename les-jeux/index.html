@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les jeux</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <!-- morpion -->
+     <h1>Morpion</h1>
+    <div id="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+    <span id="play-info">C'est à O</span><br>
+    <button class="restart" type="button">Rejouer</button>
+
+
+    <hr>
+    <!-- snake -->
+    <h1>Snake</h1>
+    <canvas id="game-canvas" width="400" height="400"></canvas>
+    <button type="button" id="start-btn">startGame</button>
+    <button type="button" id="pause-btn">Pause</button>
+    <button type="button" id="restart-btn">restartGame</button>
+
+    <hr>
+    <!-- guess the word -->
+    <h1>Guess the word</h1>
+    <main>
+        <section>
+            <h2>Word Scramble</h2>
+
+            <div class="zone-reponse"></div>
+            <div class="lettres-melangees"></div>
+
+            <div class="note">
+                <h3>tries:<span id="tries">0</span></h3>
+                <h3>mistake:<span id="mistakes"></span></h3>
+            </div>
+
+            <p id="message"></p>
+
+            <button type="button" class="random">Random</button>
+            <button type="button" class="reset">Reset</button>
+
+        </section>
+    </main>
+    
+    
+</body>
+</html>

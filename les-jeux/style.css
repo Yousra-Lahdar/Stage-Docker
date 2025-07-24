@@ -1,0 +1,176 @@
+
+/* morpion */
+#board{
+    display:grid;
+    grid-template-columns: repeat(3,90px);
+    grid-template-rows: repeat(3, 90px);
+    margin: 40px auto;
+    justify-content: center;
+    
+    
+}
+.cell{
+    border: 2px solid rgb(4 29 68);
+    width:90px;
+    height:90px;
+    font-size:3em;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    background-color:#cce7f6;
+    color:#0411b3;
+    transition:background.78s
+  
+}
+.cell:hover{
+    background: rgb(200, 133, 233);
+}
+
+#play-info{
+    display:flex;
+    font-family: Arial;
+    font-size: 30px;
+    color: rgb(4 29 68);
+    justify-content: center;
+    
+}
+.restart{
+    background-color: rgb(200, 133, 233);
+
+
+}
+
+/* snake */
+
+#game-canvas {
+    background: #23243a;
+    border: 2px solid #34d399;
+    margin: 24px auto;
+    display: block;
+  }
+
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+
+/* Guess the word */
+
+header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+main {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    /*padding: 30px;*/
+    padding: 50px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+   /* margin: 30px 0;*/
+   margin: 0 auto;
+}
+
+
+h2 {
+    text-align: center;
+    color: #6a0dad;
+    margin-bottom: 20px;
+}
+
+
+.zone-reponse {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.reponse-lettre {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #6a0dad;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1e4f3;
+    color:#52048c;
+}
+
+
+.lettres-melangees {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.lettres-melangees button {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #b57edc;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+
+.lettres-melangees button:hover {
+    background-color: #9d65c9;
+}
+
+.lettres-melangees button:disabled {
+    background-color: #ddd;
+    color: #888;
+    cursor: not-allowed;
+}
+
+
+.random,
+.reset {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f40ad9;
+    color: white;
+    cursor: pointer;
+   
+}
+
+button.random:hover,
+button.reset:hover {
+    background-color: #581b98;
+}
+
+
+.note {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.note span {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+
+#message {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #4b0082;
+}
+

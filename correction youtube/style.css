@@ -1,0 +1,22 @@
+#yt-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    width: 1000px;
+    margin: auto;
+    
+}
+
+#yt-cards-container .card {
+    width: 200px;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#yt-cards-container .card img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    
+
+}

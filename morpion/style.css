@@ -1,0 +1,46 @@
+
+
+#board{
+    display:grid;
+    grid-template-columns: repeat(3,90px);
+    grid-template-rows: repeat(3, 90px);
+    margin: 40px auto;
+    justify-content: center;
+    
+    
+}
+.cell{
+    border: 2px solid rgb(4 29 68);
+    width:90px;
+    height:90px;
+    font-size:3em;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    background-color:#cce7f6;
+    color:#0411b3;
+    transition:background.78s
+  
+}
+.cell:hover{
+    background: rgb(200, 133, 233);
+}
+
+#play-info{
+    display:flex;
+    font-family: Arial;
+    font-size: 30px;
+    color: rgb(4 29 68);
+    justify-content: center;
+    
+}
+.restart{
+    background-color: rgb(200, 133, 233);
+
+
+}
+
+h1{
+    text-align: center;
+    color: crimson;
+}
